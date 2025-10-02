@@ -3,6 +3,10 @@ Install Debian
 Sudo - usermod -aG sudo username
 visudo
 
+To prevent your Debian laptop from doing anything when you close the lid, you need to edit the /etc/systemd/logind.conf file.
+Change the line HandleLidSwitch=suspend to HandleLidSwitch=ignore 
+Then restart the systemd-logind service with sudo systemctl restart systemd-logind
+
 sudo apt install krita inkscape
 
 Use latest Firefox
