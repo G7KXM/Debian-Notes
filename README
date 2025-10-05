@@ -1,5 +1,11 @@
 Install Debian
 
+My 1TB SSD
+1GB (952MB) EFI sda1
+xxxGB (412GB) / sda2
+16GB (xxGB) SWAP sda3
+xxxGB (488GB) /home sda4
+
 Sudo - usermod -aG sudo username
 visudo
 
@@ -7,7 +13,7 @@ To prevent your Debian laptop from doing anything when you close the lid, you ne
 Change the line HandleLidSwitch=suspend to HandleLidSwitch=ignore 
 Then restart the systemd-logind service with sudo systemctl restart systemd-logind
 
-sudo apt install krita inkscape
+sudo apt install krita inkscape xrdp 
 
 Use latest Firefox
 sudo apt purge firefox-esr
